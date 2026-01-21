@@ -57,7 +57,7 @@ jobs:
       - name: Build CdCSharp.BuildTools
         run: |
           echo "🔧 Building CdCSharp.BuildTools..."
-          dotnet build CdCSharp.BuildTools/CdCSharp.BuildTools.csproj \
+          dotnet build CdCSharp.BuildTools.csproj \
             -c ${{ env.CONFIGURATION }} \
             -p:Version=${{ steps.version.outputs.version }} \
             -p:AssemblyVersion=${{ steps.version.outputs.version }} \
@@ -81,7 +81,7 @@ jobs:
       - name: Pack NuGet Package
         run: |
           echo "📦 Creating NuGet package..."
-          dotnet pack CdCSharp.BuildTools/CdCSharp.BuildTools.csproj \
+          dotnet pack CdCSharp.BuildTools.csproj \
             -c ${{ env.CONFIGURATION }} \
             -o ./artifacts \
             -p:PackageVersion=${{ steps.version.outputs.version }} \

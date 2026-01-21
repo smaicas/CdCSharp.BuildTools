@@ -4,6 +4,17 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+
+		<!-- Package Metadata -->
+		<PackageId>CdCSharp.BuildTools</PackageId>
+		<Description>A flexible and extensible build automation framework for .NET projects that
+			enables asset generation, template management, and Node.js tooling integration.</Description>
+		<PackageTags>$(PackageTags);automation;build;nodejs;</PackageTags>
+		<Authors>Samuel Maícas (CdCSharp)</Authors>
+		<Company>smaicas</Company>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/smaicas/CdCSharp.NjBlazor</RepositoryUrl>
+
 	</PropertyGroup>
 
 </Project>
