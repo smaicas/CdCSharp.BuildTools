@@ -136,8 +136,8 @@ jobs:
           echo "🚀 Publishing CdCSharp.BuildTools to NuGet.org..."
           
           dotnet nuget push "./artifacts/CdCSharp.BuildTools.${{ steps.version.outputs.version }}.nupkg" \
-            -k ${{ secrets.NUGET_API_KEY }} \
-            -s https://api.nuget.org/v3/index.json \
+            --api-key ${{ secrets.NUGET_API_KEY }} \
+            --source https://api.nuget.org/v3/index.json \
             --skip-duplicate \
             --no-symbols
           
